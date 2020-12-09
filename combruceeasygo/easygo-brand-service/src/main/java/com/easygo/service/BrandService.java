@@ -25,4 +25,6 @@ public interface BrandService {
 
     public int deleteBrand(Integer id);
 
+    public int deleteSome(String ids);
+
 }

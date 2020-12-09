@@ -5,6 +5,7 @@ import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
@@ -24,18 +25,18 @@ public interface BrandClient {
     @RequestMapping("/brand_getBrands")
     public List<Brand> getBrands();
 
-   /* @RequestMapping("/brand_add")
+    @RequestMapping(value = "/brand_add",method = RequestMethod.GET)
     public int addBrand(@RequestBody Brand brand);
 
-    @RequestMapping("/brand_getBrandById")
-    public Brand getBrandById(@RequestParam Integer id);
+    @RequestMapping(value = "/brand_getBrandById",method = RequestMethod.GET)
+    public Brand getBrandById(@RequestParam(name = "id") Integer id);
 
-    @RequestMapping("/brand_updateBrand")
+    @RequestMapping(value = "/brand_updateBrand",method = RequestMethod.POST)
     public int updateBrand(@RequestBody Brand brand);
 
-    @RequestMapping("/brand_delete")
-    public int deleteBrand(@RequestParam Integer id);
+    @RequestMapping(value = "/brand_delete",method = RequestMethod.GET)
+    public int deleteBrand(@RequestParam(name = "id") Integer id);
 
-    @RequestMapping("/brand_deleteSome")
-    public int deleteSome(@RequestParam String ids);*/
+    @RequestMapping(value = "/brand_deleteSome",method = RequestMethod.GET)
+    public int deleteSome(@RequestParam(name = "ids") String ids);
 }

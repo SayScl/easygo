@@ -23,6 +23,7 @@ public class BrandServiceImpl implements BrandService {
     @Resource
     BrandMapper brandMapper;
 
+
     @Override
     public List<Brand> getBrands() {
         return brandMapper.getBrands();
@@ -46,6 +47,11 @@ public class BrandServiceImpl implements BrandService {
     @Override
     public int deleteBrand(Integer id) {
         return brandMapper.deleteBrand(id);
+    }
+
+    @Override
+    public int deleteSome(String ids) {
+        return brandMapper.deleteSome(ids);
     }
 
 }

@@ -9,6 +9,7 @@
         <module name="combruceeasygo" />
         <module name="easygo-admin-web" />
         <module name="easygo-brand-service" />
+        <module name="easygo-commons" />
         <module name="easygo-eureka" />
         <module name="easygo-pojo" />
       </profile>
@@ -17,6 +18,7 @@
       <module name="combruceeasygo" target="1.8" />
       <module name="easygo-admin-web" target="1.8" />
       <module name="easygo-brand-service" target="1.8" />
+      <module name="easygo-commons" target="1.8" />
       <module name="easygo-eureka" target="1.8" />
       <module name="easygo-pojo" target="1.8" />
     </bytecodeTargetLevel>

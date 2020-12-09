@@ -3,6 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/combruceeasygo.iml" filepath="$PROJECT_DIR$/combruceeasygo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/easygo-admin-web/easygo-admin-web.iml" filepath="$PROJECT_DIR$/easygo-admin-web/easygo-admin-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/easygo-brand-service/easygo-brand-service.iml" filepath="$PROJECT_DIR$/easygo-brand-service/easygo-brand-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/easygo-eureka/easygo-eureka.iml" filepath="$PROJECT_DIR$/easygo-eureka/easygo-eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/easygo-pojo/easygo-pojo.iml" filepath="$PROJECT_DIR$/easygo-pojo/easygo-pojo.iml" />
     </modules>
   </component>
 </project>

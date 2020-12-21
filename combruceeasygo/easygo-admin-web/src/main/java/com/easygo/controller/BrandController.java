@@ -3,6 +3,7 @@ package com.easygo.controller;
 import com.easygo.api.BrandClient;
 import com.easygo.pojo.Brand;
 import com.easygo.utils.MessageResults;
+import com.easygo.utils.PageUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
@@ -26,6 +27,20 @@ public class BrandController {
 
     @Autowired
     BrandClient brandClient;
+
+    /**
+     * 分页查询
+     * @param pageIndex
+     * @param pageSize
+     * @param model
+     * @return
+     */
+    @RequestMapping("/brand_page")
+    public String getBrandsByPage(@RequestParam(defaultValue = "1",required = false) Integer pageIndex, @RequestParam(defaultValue = "5",required = false) Integer pageSize, Model model){
+        PageUtils<Brand> pageUtils= brandClient.getBrandsByPage(pageIndex,pageSize);
+        model.addAttribute("pageUtils",pageUtils);
+        return "brand";
+    }
 
     @RequestMapping("/brand_getBrands")
     public String getBrands(ModelMap map) {

@@ -1,0 +1,5 @@
+com\easygo\controller\BrandController.class
+com\easygo\service\BrandService.class
+com\easygo\EasygoBrandServiceApplication.class
+com\easygo\mapper\BrandMapper.class
+com\easygo\service\impl\BrandServiceImpl.class

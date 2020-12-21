@@ -3,11 +3,15 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/combruceeasygo.iml" filepath="$PROJECT_DIR$/combruceeasygo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/easygo-ad-service/easygo-ad-service.iml" filepath="$PROJECT_DIR$/easygo-ad-service/easygo-ad-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/easygo-admin-service/easygo-admin-service.iml" filepath="$PROJECT_DIR$/easygo-admin-service/easygo-admin-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/easygo-admin-web/easygo-admin-web.iml" filepath="$PROJECT_DIR$/easygo-admin-web/easygo-admin-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/easygo-brand-service/easygo-brand-service.iml" filepath="$PROJECT_DIR$/easygo-brand-service/easygo-brand-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/easygo-commons/easygo-commons.iml" filepath="$PROJECT_DIR$/easygo-commons/easygo-commons.iml" />
       <module fileurl="file://$PROJECT_DIR$/easygo-eureka/easygo-eureka.iml" filepath="$PROJECT_DIR$/easygo-eureka/easygo-eureka.iml" />
       <module fileurl="file://$PROJECT_DIR$/easygo-pojo/easygo-pojo.iml" filepath="$PROJECT_DIR$/easygo-pojo/easygo-pojo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/easygo-protal-web/easygo-protal-web.iml" filepath="$PROJECT_DIR$/easygo-protal-web/easygo-protal-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/easygo-specification-service/easygo-specification-service.iml" filepath="$PROJECT_DIR$/easygo-specification-service/easygo-specification-service.iml" />
     </modules>
   </component>
 </project>

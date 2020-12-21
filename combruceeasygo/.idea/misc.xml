@@ -9,6 +9,10 @@
         <option value="$PROJECT_DIR$/easygo-eureka/pom.xml" />
         <option value="$PROJECT_DIR$/easygo-admin-web/pom.xml" />
         <option value="$PROJECT_DIR$/easygo-commons/pom.xml" />
+        <option value="$PROJECT_DIR$/easygo-admin-service/pom.xml" />
+        <option value="$PROJECT_DIR$/easygo-ad-service/pom.xml" />
+        <option value="$PROJECT_DIR$/easygo-protal-web/pom.xml" />
+        <option value="$PROJECT_DIR$/easygo-specification-service/pom.xml" />
       </list>
     </option>
   </component>

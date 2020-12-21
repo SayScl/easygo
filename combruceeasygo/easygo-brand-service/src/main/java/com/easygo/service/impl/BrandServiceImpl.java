@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @BelongsProject: easygo
@@ -52,6 +53,16 @@ public class BrandServiceImpl implements BrandService {
     @Override
     public int deleteSome(String ids) {
         return brandMapper.deleteSome(ids);
+    }
+
+    @Override
+    public int getTotalCount() {
+        return brandMapper.getTotalCount();
+    }
+
+    @Override
+    public List<Brand> getPageBrands(Map<String, Object> map) {
+        return brandMapper.getPageBrands(map);
     }
 
 }

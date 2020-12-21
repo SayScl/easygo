@@ -35,4 +35,12 @@
         </foreach>
     </update>
 
+    <select id="getTotalCount" resultType="integer">
+        select count(1) from tb_brand where del=0
+    </select>
+
+    <select id="getPageBrands" resultType="com.easygo.pojo.Brand">
+        select * from tb_brand where del=0 order by id desc limit #{pageStart},#{pageSize}
+    </select>
+
 </mapper>

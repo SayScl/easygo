@@ -6,6 +6,7 @@ import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by 46376 on 2020/12/9.
@@ -26,5 +27,11 @@ public interface BrandMapper {
     public int deleteSome(@Param("ids") String ids);
 
     public int deleteSome1(Integer[] ids);
+
+    //查询总条数(没有条件)
+    public int getTotalCount();
+
+    //查询每页的数据(没有条件)
+    public List<Brand> getPageBrands(Map<String,Object> map);
 
 }

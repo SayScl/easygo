@@ -64,12 +64,24 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
+        <dependency>
+            <groupId>easygo</groupId>
+            <artifactId>easygo-commons</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
 
 
     </dependencies>
 
 
     <build>
+        <plugins>
+            <!--SpringBoot打包插件  jar  java -jar jar包-->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
         <!--编译的时候同时也把包下面的xml同时编译进去-->
         <resources>
             <resource>

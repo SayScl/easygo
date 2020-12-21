@@ -1,6 +1,7 @@
 package com.easygo.api;
 
 import com.easygo.pojo.Brand;
+import com.easygo.utils.PageUtils;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -22,7 +23,10 @@ import java.util.List;
 @Service
 public interface BrandClient {
 
-    @RequestMapping("/brand_getBrands")
+    @RequestMapping(value = "/brand_page",method = RequestMethod.POST)
+    public PageUtils getBrandsByPage(@RequestParam(defaultValue = "1",required = false,name = "pageIndex") Integer pageIndex, @RequestParam(defaultValue = "5",required = false,name = "pageSize") Integer pageSize);
+
+    @RequestMapping(value = "/brand_getBrands",method = RequestMethod.POST)
     public List<Brand> getBrands();
 
     @RequestMapping(value = "/brand_add",method = RequestMethod.GET)

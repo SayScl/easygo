@@ -7,6 +7,7 @@
     <groupId>easygo</groupId>
     <artifactId>com.bruce.easygo</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
 
     <properties>
         <java.version>1.8</java.version>
@@ -32,16 +33,5 @@
         <version>2.1.4.RELEASE</version>
         <relativePath/>
     </parent>
-
-    <build>
-        <plugins>
-            <!--SpringBoot打包插件  jar  java -jar jar包-->
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
-
 
 </project>

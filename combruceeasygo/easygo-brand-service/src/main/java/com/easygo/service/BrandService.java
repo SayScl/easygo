@@ -4,6 +4,7 @@ import com.easygo.pojo.Brand;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * @BelongsProject: easygo
@@ -26,5 +27,11 @@ public interface BrandService {
     public int deleteBrand(Integer id);
 
     public int deleteSome(String ids);
+
+    //查询总条数(没有条件)
+    public int getTotalCount();
+
+    //查询每页的数据(没有条件)
+    public List<Brand> getPageBrands(Map<String,Object> map);
 
 }
